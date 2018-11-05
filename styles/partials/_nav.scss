@@ -1,0 +1,23 @@
+.navi {
+    background: $tertiaryColor;
+    padding: 5% 0;
+}
+.nav-container {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.navigation {
+    width:40%;
+    margin:0 0 0 10%;
+    position:relative;
+
+    &__icon {
+        background: $secondaryColor;
+        padding:10px;
+        border-radius:50%;
+        position:absolute;
+        left:-50px;
+        top:20px;
+    }
+}

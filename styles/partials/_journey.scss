@@ -1,0 +1,23 @@
+.harper2 {
+    background: $tertiaryColor;
+}
+
+.journey {
+    display:flex;
+    padding:5% 0;
+}
+
+.journey-img {
+    width:20%;
+    margin-top:2%;
+
+    &__img {
+        width:100%;
+        box-shadow: 15px 15px $secondaryAccent;
+    }
+}
+
+.journey-content {
+    width:60%;
+    margin-left:10%;
+}

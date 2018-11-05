@@ -1,0 +1,35 @@
+.first-container, .second-container {
+    display:flex;
+}
+
+.first-container {
+    padding-left:5%;
+
+    &__img {
+        box-shadow: 15px 15px $secondaryAccent, -150px 15px $secondaryAccent;
+        margin-right:4%;
+    }
+}
+
+.second-container {
+    flex-direction: row-reverse;
+    margin-top:5%;
+    padding-right:5%;
+
+    &__img {
+         box-shadow: 15px 15px $secondaryColor, 150px 15px $secondaryColor;
+         margin-left:4%;
+    }
+}
+
+.container-text {
+    width:35%;
+    margin:5%;
+
+}
+
+
+
+.two {
+    margin:2% 5% 0 11%;
+}

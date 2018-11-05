@@ -1,0 +1,17 @@
+header {
+    background: $secondaryColor;
+}
+
+.header {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    justify-content: space-between;
+    margin:0 30%;
+    padding:2% 0;
+
+    &__links--title {
+        font-size: 3rem;
+
+    }
+}

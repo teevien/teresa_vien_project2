@@ -1,0 +1,51 @@
+header {
+    background: $secondaryColor;
+}
+
+.header {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    justify-content: space-between;
+    margin:0 30%;
+    padding:2% 0;
+
+    &__links--title {
+        font-size: 3rem;
+
+    }
+}
+
+.logo-section {
+    display:flex;
+
+
+    &__title {
+        margin:10% 0 12% 50%;
+        position:relative;
+
+        h1 {
+            font-size:10rem;
+        }
+
+        img {
+            // transform: rotate(0deg);
+            position:absolute;
+            top:-5px;
+            right:-60px;
+        }
+    }
+
+    &__img {
+        width:30%;
+        margin-left:10%;
+        z-index:1;
+        position:absolute;
+
+        img {
+            box-shadow:20px 20px white;
+            width:100%;
+        }
+    }
+}
+

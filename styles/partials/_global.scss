@@ -1,0 +1,87 @@
+$primaryColor: #171717;
+$secondaryColor: #b9dde7;
+$tertiaryColor: #f6f6f6;
+$primaryAccent: #f38d8d;
+$secondaryAccent: #227284;
+$tertiaryAccent: #68b0c1;
+
+// General Styles
+html {
+    font-size:62.5%;
+}
+
+body {
+    font-size:1.6rem;
+    color: $primaryColor;
+    font-family: 'Cabin', sans-serif;
+
+    p {
+        line-height: 32px;
+    }
+}
+
+.wrapper {
+    max-width:1080px;
+    margin:0 auto;
+    width:80%;
+}
+
+li {
+    list-style:none;
+}
+
+a {
+    color: $primaryColor;
+    text-decoration:none;
+}
+
+main .button {
+    padding:5px 20px;
+    background: $primaryAccent;
+}
+
+
+// Typography Styles
+@mixin primaryFont ($size) {
+    font-family: 'Oswald', sans-serif;
+    color: $primaryColor;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+
+h1 {
+    @include primaryFont (8rem);
+    line-height:92px;
+}
+
+h2 {
+    @include primaryFont (4.2rem);
+}
+
+h3 {
+    @include primaryFont (3.2rem);
+}
+
+h4 {
+    @include primaryFont (2.4rem);
+}
+
+.header__links a {
+    @include primaryFont (2rem);
+    line-height:29px;
+    text-align:right;
+}
+
+main a {
+    @include primaryFont (2rem);
+    line-height:30px;
+    text-transform:uppercase;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color:white;
+}

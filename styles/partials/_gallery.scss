@@ -1,0 +1,25 @@
+.gallery-container {
+    display:flex;
+    margin:5% 0;
+
+    &__item {
+        width:30%;
+        margin:0 2%;
+
+        &--img {
+            width:100%;
+        }
+    }
+}
+
+.footer-section {
+    background: $primaryColor;
+
+    &__text {
+        color: $tertiaryColor;
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
+
+}

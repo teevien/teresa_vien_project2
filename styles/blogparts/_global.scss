@@ -1,0 +1,53 @@
+$primaryColor: #171717;
+$secondaryColor: #b9dde7;
+$tertiaryColor: #f6f6f6;
+$primaryAccent: #f38d8d;
+$secondaryAccent: #227284;
+$tertiaryAccent: #68b0c1;
+
+// General Styles
+html {
+    font-size:62.5%;
+}
+
+// body {
+//     font-size:1.6rem;
+//     color: $primaryColor;
+//     font-family: 'Cabin', sans-serif;
+
+//     p {
+//         line-height: 32px;
+//     }
+// }
+
+.wrapper {
+    max-width:1080px;
+    margin:0 auto;
+    width:80%;
+}
+
+li {
+    list-style:none;
+}
+
+a {
+    color: $primaryColor;
+    text-decoration:none;
+}
+
+// @mixin primaryFont ($size) {
+//     font-family: 'Oswald', sans-serif;
+//     color: $primaryColor;
+//     text-transform: uppercase;
+//     letter-spacing:1px;
+// }
+
+.header__links a {
+    font-family: 'Oswald', sans-serif;
+    color: $primaryColor;
+    font-size:2rem;
+    text-transform:uppercase;
+    letter-spacing: 1;
+    line-height:29px;
+    font-weight:bold;
+}
