@@ -1,0 +1,46 @@
+main {
+    background: $tertiaryColor;
+}
+
+.main-blog, .aside {
+    width:calc(50% - 10%);
+    float:left;
+    margin:5% 2%;
+
+    &__section {
+        background: white;
+        margin-bottom:5%;
+        padding:5%;
+
+        &--blue {
+            background: white;
+            border-bottom:4px solid $secondaryAccent;
+            padding:5%;
+            margin-bottom:5%;
+        }
+    }
+}
+
+.aside {
+    padding:2%;
+
+    &__about {
+        background:white;
+        margin-bottom:5%;
+    }
+
+    &__recent-posts {
+        background:white;
+    }
+}
+
+
+
+// .main-blog__section {
+//     background: white;
+//     margin-bottom:2%;
+
+//     &--blue {
+//         border-bottom:4px solid $secondaryAccent;
+//     }
+// }

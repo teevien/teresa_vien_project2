@@ -10,15 +10,15 @@ html {
     font-size:62.5%;
 }
 
-// body {
-//     font-size:1.6rem;
-//     color: $primaryColor;
-//     font-family: 'Cabin', sans-serif;
+body {
+    font-size:1.6rem;
+    color: $primaryColor;
+    font-family: 'Cabin', sans-serif;
+}
 
-//     p {
-//         line-height: 32px;
-//     }
-// }
+p {
+    line-height:32px;
+}
 
 .wrapper {
     max-width:1080px;
@@ -35,19 +35,29 @@ a {
     text-decoration:none;
 }
 
-// @mixin primaryFont ($size) {
-//     font-family: 'Oswald', sans-serif;
-//     color: $primaryColor;
-//     text-transform: uppercase;
-//     letter-spacing:1px;
-// }
-
-.header__links a {
+@mixin primaryFont ($size) {
     font-family: 'Oswald', sans-serif;
     color: $primaryColor;
-    font-size:2rem;
-    text-transform:uppercase;
-    letter-spacing: 1;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+
+
+
+.header__links a {
+    @include primaryFont (2rem);
     line-height:29px;
-    font-weight:bold;
+}
+
+a:hover, a:active {
+    color: white;
+}
+
+h1 {
+    @include primaryFont (8rem);
+    line-height:92px;
+}
+
+h4 {
+    @include primaryFont (2.4rem);
 }

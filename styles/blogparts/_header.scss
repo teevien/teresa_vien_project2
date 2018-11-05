@@ -1,5 +1,12 @@
 header {
     background: $secondaryColor;
+    position:relative;
+
+    h1 {
+        position:absolute;
+        bottom:-60px;
+        left:150px;
+    }
 }
 
 .header {
@@ -9,9 +16,19 @@ header {
     justify-content: space-between;
     margin:0 30%;
     padding:2% 0;
+    
 
     &__links--title {
         font-size: 3rem;
 
+    }
+}
+
+.blog-background {
+    width:100%;
+
+    &__img {
+        width:100%;
+        display:block;
     }
 }
