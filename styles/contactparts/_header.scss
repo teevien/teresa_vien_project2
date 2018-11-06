@@ -9,6 +9,13 @@ header {
     }
 }
 
+// .navbar {
+//     position:fixed;
+//     top:0;
+//     width:100%;
+//     background: $secondaryColor;
+// }
+
 
 .header {
     display:flex;
@@ -17,7 +24,6 @@ header {
     justify-content: space-between;
     margin:0 30%;
     padding:2% 0;
-    
     
 
     &__links--title {

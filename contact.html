@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contactstyle.css">
+    <title>Harper's Contact</title>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="wrapper">
+            <!-- <div class="navbar"> -->
+                <ul class="header">
+                    <li class="header__links">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="header__links">
+                        <a href="index.html">About</a>
+                    </li>
+                    <li class="header__links">
+                        <a class="header__links--title" href="index.html">Harper</a>
+                    </li>
+                    <li class="header__links">
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="header__links">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            <!-- </div> -->
+        </div>
+    
+            <div class="blog-background">
+                <img class="blog-background__img" src="assets/contact-image-1.jpg" alt="">
+            </div>
+        
+            <h1>Contact Me</h1>
+        
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <div class="main wrapper">
+
+            <div class="contact">
+                <ul class="contact__links">
+                    <li class="contact__list">
+                        <a class="contact__list--item"href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="contact__list">
+                        <a class="contact__list--item" href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="contact__list">
+                        <a class="contact__list--item" href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="contact__list">
+                        <a class="contact__list--item" href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+                <p class="contact__list--bold">info@email.com</p>
+                <p>123-456-7890</p>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </div>
+
+            <div class="main-contact">
+                <form action="sendEmail.php" class="main-contact__form" method="POST" name="contactForm">
+                    <input type="text" class="main-contact__name" name="name" required="true" placeholder="Name">
+                    <input type="text" class="main-contact__email" name="email" placeholder="Email Address">
+                    <input type="text" class="main-contact__comment" name="comment" required="true" placeholder="Message">
+                    <input type="submit" class="main-contact__button" name="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-section">
+            <p class="footer-section__text">Copyright 2018 HackerYou</p>
+        </div>
+    </footer>
+</body>
+</html>

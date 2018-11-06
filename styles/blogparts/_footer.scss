@@ -1,0 +1,11 @@
+.footer-section {
+    background: $primaryColor;
+
+    &__text {
+        color: $tertiaryColor;
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
+
+}

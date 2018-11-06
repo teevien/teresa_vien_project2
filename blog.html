@@ -17,16 +17,16 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li class="header__links">
-                    <a href="#">About</a>
+                    <a href="#scroll-about">About</a>
                 </li>
                 <li class="header__links">
-                    <a class="header__links--title" href="#">Harper</a>
+                    <a class="header__links--title" href="index.html">Harper</a>
                 </li>
                 <li class="header__links">
                     <a href="blog.html">Blog</a>
                 </li>
                 <li class="header__links">
-                    <a href="#">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -42,7 +42,7 @@
     <main>
         <div class="main wrapper clearfix">
 
-            <div class="aside">
+            <div class="aside" id="scroll-about">
                 <div class="aside__section">
                     <img class="aside__section--img"src="assets/blog-image-2.jpg" alt="">
                     <h4>About Harper</h4>
@@ -98,16 +98,22 @@
                     </div>
                 </div>
 
-                <!-- <div class="main-blog__form"> -->
-                    <form action="sendEmail.php" class="main-blog__form" method="POST" name="blogForm">
-                        <input type="text" class="main-blog__name" name="name" required="true" placeholder="Name">
-                        <input type="text"  class="main-blog__email" name="email" placeholder="Email Address">
-                        <input type="text" class="main-blog__comment" name="comment" required="true" placeholder="Comment">
-                        <input type="submit" class="main-blog__button" name="submit" value="Post Comment">
-                    </form>
-                <!-- </div> -->
+                
+                <form action="sendEmail.php" class="main-blog__form" method="POST" name="blogForm">
+                    <input type="text" class="main-blog__name" name="name" required="true" placeholder="Name">
+                    <input type="text"  class="main-blog__email" name="email" placeholder="Email Address">
+                    <input type="text" class="main-blog__comment" name="comment" required="true" placeholder="Comment">
+                    <input type="submit" class="main-blog__button" name="submit" value="Post Comment">
+                </form>
             </div>
         </div>
     </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-section">
+            <p class="footer-section__text">Copyright 2018 HackerYou</p>
+        </div>
+    </footer>
 </body>
 </html>
