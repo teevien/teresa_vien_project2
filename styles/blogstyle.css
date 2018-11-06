@@ -162,9 +162,6 @@ a {
   letter-spacing: 1px;
   line-height: 29px; }
 
-a:hover, a:active {
-  color: white; }
-
 h1 {
   font-family: 'Oswald', sans-serif;
   color: #171717;
@@ -177,6 +174,18 @@ h4 {
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+.main-blog__button {
+  font-family: 'Oswald', sans-serif;
+  color: #171717;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  background: #f38d8d;
+  border: 1px solid #f38d8d; }
+
+a:hover {
+  color: white; }
 
 header {
   background: #b9dde7;
@@ -212,26 +221,74 @@ header {
     display: block; }
 
 main {
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  padding: 5% 0; }
 
-.main-blog, .aside {
-  width: calc(50% - 10%);
-  float: left;
-  margin: 5% 2%; }
-  .main-blog__section, .aside__section {
-    background: white;
-    margin-bottom: 5%;
-    padding: 5%; }
-    .main-blog__section--blue, .aside__section--blue {
-      background: white;
-      border-bottom: 4px solid #227284;
-      padding: 5%;
-      margin-bottom: 5%; }
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .aside {
-  padding: 2%; }
-  .aside__about {
-    background: white;
-    margin-bottom: 5%; }
-  .aside__recent-posts {
+  width: 30%; }
+  .aside__section {
+    padding: 5%;
+    margin-bottom: 5%;
     background: white; }
+    .aside__section ul li {
+      list-style: disc; }
+    .aside__section--img {
+      width: 100%; }
+
+.main-blog {
+  width: 60%; }
+  .main-blog__section, .main-blog__section--flex {
+    background: white;
+    padding: 2%;
+    margin: 0 0 5% 5%; }
+    .main-blog__section--flex, .main-blog__section--flex--flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .main-blog__section--img, .main-blog__section--flex--img {
+      margin: 5% 3% 0 0; }
+  .main-blog__form {
+    margin-left: 4%; }
+  .main-blog__name, .main-blog__email, .main-blog__comment {
+    border: 1px solid white;
+    padding: 2% 4%; }
+  .main-blog__name, .main-blog__email {
+    width: calc(50% - 4%); }
+  .main-blog__email {
+    margin-left: 7%; }
+  .main-blog__comment {
+    width: 100%;
+    height: 200px;
+    margin: 3% 0; }
+  .main-blog__button {
+    width: 100%; }
+
+::-webkit-input-placeholder {
+  color: #171717;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #171717;
+  opacity: 1; }
+
+::-ms-input-placeholder {
+  color: #171717;
+  opacity: 1; }
+
+::placeholder {
+  color: #171717;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #171717; }
+
+::-ms-input-placeholder {
+  color: #171717; }
+
+.blue {
+  border-bottom: 4px solid #227284; }

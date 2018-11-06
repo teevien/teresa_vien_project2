@@ -42,22 +42,28 @@ a {
     letter-spacing:1px;
 }
 
-
-
 .header__links a {
     @include primaryFont (2rem);
     line-height:29px;
 }
 
-a:hover, a:active {
-    color: white;
-}
-
 h1 {
-    @include primaryFont (8rem);
+    @include primaryFont (20rem);
     line-height:92px;
 }
 
 h4 {
     @include primaryFont (2.4rem);
 }
+
+.main-blog__button {
+    @include primaryFont (1.6rem);
+    padding: 10px 15px;
+    background: $primaryAccent;
+    border: 1px solid $primaryAccent;
+}
+
+a:hover {
+    color: white;
+}
+
