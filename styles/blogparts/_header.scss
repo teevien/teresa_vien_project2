@@ -15,10 +15,8 @@ header {
     flex-direction:row;
     justify-content: center;
     justify-content: space-between;
-    margin:0 30%;
-    padding:2% 0;
-    
-    
+    margin:0;
+    padding:1% 20%;
 
     &__links--title {
         font-size: 3rem;
@@ -34,3 +32,4 @@ header {
         display:block;
     }
 }
+

@@ -22,7 +22,7 @@ p {
 }
 
 .wrapper {
-    max-width:1080px;
+    max-width:1300px;
     margin:0 auto;
     width:80%;
 }
@@ -68,3 +68,9 @@ a:hover {
     color: white;
 }
 
+//MEDIA QUERIES
+@media (max-width:768px) {
+    .wrapper {
+        width:95%;
+    }
+}

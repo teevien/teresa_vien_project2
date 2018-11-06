@@ -144,7 +144,7 @@ body {
     line-height: 32px; }
 
 .wrapper {
-  max-width: 1080px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 80%; }
 
@@ -223,8 +223,8 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 30%;
-  padding: 2% 0; }
+  margin: 0;
+  padding: 1%  20%; }
   .header__links--title {
     font-size: 3rem; }
 
@@ -250,6 +250,33 @@ header {
       -webkit-box-shadow: 20px 20px white;
       box-shadow: 20px 20px white;
       width: 100%; }
+
+@media (min-width: 969px) and (max-width: 1200px) {
+  .header__links {
+    margin: 0 5%; }
+  .logo-section__img {
+    bottom: 120px; } }
+
+@media (max-width: 970px) {
+  .header__links {
+    margin: 0 3%; }
+  .logo-section__title {
+    margin: 10% auto; }
+  .logo-section__img {
+    bottom: -100px;
+    left: 0px;
+    bottom: -50px;
+    width: 25%; } }
+
+@media (max-width: 767px) {
+  .header {
+    margin: 0;
+    padding: 0; }
+  .header__links {
+    margin: 0 2%; }
+  .logo-section__img {
+    bottom: 0;
+    left: 0; } }
 
 .harper1 {
   background: #f6f6f6; }
@@ -289,17 +316,42 @@ header {
     left: -50px;
     top: 20px; }
 
+@media (max-width: 768px) {
+  .nav-container {
+    height: 140px;
+    width: 100%; }
+  .navigation {
+    width: 15%;
+    position: relative;
+    margin: 5% auto;
+    padding: 0; }
+    .navigation__icon {
+      position: absolute;
+      top: -20px;
+      left: 25px; }
+    .navigation__text--title {
+      text-align: center; }
+  .navigation__text--content {
+    display: none; } }
+
+@media (max-width: 630px) {
+  .navigation {
+    padding-top: 2%;
+    margin-top: 7%; }
+  .navigation__icon {
+    left: 15px; } }
+
 .first-container, .second-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .first-container {
-  padding-left: 5%; }
+  padding-left: 10%; }
   .first-container__img {
     -webkit-box-shadow: 15px 15px #227284, -150px 15px #227284;
     box-shadow: 15px 15px #227284, -150px 15px #227284;
-    margin-right: 4%; }
+    width: 550px; }
 
 .second-container {
   -webkit-box-orient: horizontal;
@@ -307,18 +359,47 @@ header {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   margin-top: 5%;
-  padding-right: 5%; }
+  padding-right: 10%; }
   .second-container__img {
     -webkit-box-shadow: 15px 15px #b9dde7, 150px 15px #b9dde7;
     box-shadow: 15px 15px #b9dde7, 150px 15px #b9dde7;
-    margin-left: 4%; }
+    width: 550px; }
 
 .container-text {
-  width: 35%;
-  margin: 5%; }
+  width: 35%; }
+
+.one {
+  margin: 4% 0 0 10%; }
 
 .two {
-  margin: 2% 5% 0 11%; }
+  margin: 2% 5% 0 10%; }
+
+@media (max-width: 970px) {
+  .first-container, .second-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 80%; }
+    .first-container__img, .second-container__img {
+      width: 100%; }
+  .second-container {
+    margin-left: 15%; }
+  .container-text {
+    width: 75%; }
+  .one {
+    margin: 5% 0 5% 10%; }
+  .two {
+    margin: 5% 0 5% 12%;
+    text-align: right; } }
+
+@media (max-width: 767px) {
+  .two {
+    margin-left: 8%; } }
+
+@media (max-width: 630px) {
+  .container-text {
+    width: 100%; } }
 
 .harper2 {
   background: #f6f6f6; }
@@ -331,7 +412,8 @@ header {
 
 .journey-img {
   width: 20%;
-  margin-top: 2%; }
+  margin-top: 2%;
+  margin-left: 5%; }
   .journey-img__img {
     width: 100%;
     -webkit-box-shadow: 15px 15px #227284;
@@ -340,6 +422,18 @@ header {
 .journey-content {
   width: 60%;
   margin-left: 10%; }
+
+@media (max-width: 940px) {
+  .journey-img {
+    width: 50%; }
+  .journey-content__content {
+    display: none; } }
+
+@media (max-width: 630px) {
+  .journey {
+    padding-bottom: 7%; }
+    .journey-img {
+      width: 40%; } }
 
 .gallery-container {
   display: -webkit-box;
@@ -359,3 +453,15 @@ header {
     text-align: center;
     margin: 0;
     padding: 0; }
+
+@media (max-width: 630px) {
+  .gallery {
+    margin: 0;
+    width: 100%; }
+  .gallery-container {
+    margin: 0; }
+  .gallery-container__item {
+    margin: 0;
+    width: 40%; }
+    .gallery-container__item--img {
+      display: block; } }

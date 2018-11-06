@@ -89,4 +89,20 @@ main {
     border-bottom:4px solid $secondaryAccent;
 }
 
+//MEDIA QUERIES
+@media (max-width:768px) {
+    .aside {
+        width:40%;
+    }
+
+    .main-blog {
+        width:60%;
+
+        &__name, &__email {
+            width:100%;
+            margin:1% 0;
+            padding:2%;
+        }
+    }
+}
 

@@ -21,3 +21,44 @@
         top:20px;
     }
 }
+
+//MEDIA QUERIES
+@media (max-width:768px) {
+    .nav-container {
+        height:140px;
+        width:100%;
+    }
+
+    .navigation {
+        width:15%;
+        position:relative;
+        margin:5% auto; 
+        padding:0;
+     
+
+        &__icon {
+            position:absolute;
+            top:-20px;
+            left:25px;
+        }
+
+        &__text--title {
+            text-align:center;
+        }
+    }
+
+    .navigation__text--content{
+        display:none;
+    }
+}
+
+@media (max-width:630px) {
+    .navigation {
+        padding-top:2%;
+        margin-top:7%;
+    }
+
+    .navigation__icon {
+        left:15px;
+    }
+}

@@ -10,6 +10,7 @@
 .journey-img {
     width:20%;
     margin-top:2%;
+    margin-left:5%;
 
     &__img {
         width:100%;
@@ -20,4 +21,25 @@
 .journey-content {
     width:60%;
     margin-left:10%;
+}
+
+// MEDIA QUERIES
+@media (max-width:940px) {
+    .journey-img {
+        width:50%;
+    }
+
+    .journey-content__content {
+        display:none;
+    }
+}
+
+@media (max-width:630px) {
+    .journey {
+        padding-bottom:7%;
+
+        &-img {
+            width:40%
+        }
+    }
 }
