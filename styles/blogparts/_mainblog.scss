@@ -15,8 +15,13 @@ main {
         margin-bottom:5%;
         background:white;
 
-        ul li {
+        ul {
+            padding:0 0 0 5%;
+            margin:0;
+
+            li {
             list-style: disc;
+        }
         }
 
         &--img {
@@ -93,10 +98,26 @@ main {
 @media (max-width:768px) {
     .aside {
         width:40%;
+        height:850px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        margin-bottom:50%;
+        // border:1px solid red;
     }
+
 
     .main-blog {
         width:60%;
+
+        &__section, &__section--flex {
+        background:white;
+        padding:4%;
+        }
+
+        &__section--flex {
+            width:100%;
+        }
 
         &__name, &__email {
             width:100%;
@@ -106,3 +127,19 @@ main {
     }
 }
 
+#more {
+    display:none;
+}
+
+
+@media (max-width:645px) {
+    .main-blog__section--img {
+        display:none;
+    }
+
+    .aside, .main-blog {
+        width:50%;
+
+
+    }
+}
