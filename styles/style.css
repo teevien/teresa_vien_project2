@@ -159,36 +159,45 @@ main .button {
   padding: 5px 20px;
   background: #f38d8d; }
 
-h1 {
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0; }
+
+header h1 {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 10rem;
   line-height: 92px; }
 
 h2 {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 4.2rem; }
 
 h3 {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 3.2rem; }
 
 h4 {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 2.4rem; }
 
 .header__links a {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 2rem;
   line-height: 29px;
   text-align: right; }
 
@@ -197,6 +206,7 @@ main a {
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 2rem;
   line-height: 30px;
   text-transform: uppercase; }
 
@@ -205,6 +215,10 @@ a:hover {
 
 a:active {
   color: white; }
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 95%; } }
 
 header {
   background: #b9dde7; }
@@ -224,22 +238,21 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
-  padding: 1%  20%; }
-  .header__links--title {
+  padding: 2%  20%; }
+  .header__links .title {
     font-size: 3rem; }
 
 .logo-section {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding: 8% 0; }
   .logo-section__title {
     margin: 10% 0 12% 50%;
     position: relative; }
-    .logo-section__title h1 {
-      font-size: 10rem; }
     .logo-section__title img {
       position: absolute;
-      top: -5px;
+      top: -60px;
       right: -60px; }
   .logo-section__img {
     width: 30%;
@@ -314,7 +327,7 @@ header {
     border-radius: 50%;
     position: absolute;
     left: -50px;
-    top: 20px; }
+    top: 10px; }
 
 @media (max-width: 768px) {
   .nav-container {
@@ -327,10 +340,11 @@ header {
     padding: 0; }
     .navigation__icon {
       position: absolute;
-      top: -20px;
-      left: 25px; }
+      top: -30px;
+      left: 33px; }
     .navigation__text--title {
-      text-align: center; }
+      text-align: center;
+      font-size: 2.5rem; }
   .navigation__text--content {
     display: none; } }
 
@@ -340,6 +354,10 @@ header {
     margin-top: 7%; }
   .navigation__icon {
     left: 15px; } }
+
+@media (max-width: 480px) {
+  .navigation__text--title {
+    font-size: 2rem; } }
 
 .first-container, .second-container {
   display: -webkit-box;
@@ -431,9 +449,13 @@ header {
 
 @media (max-width: 630px) {
   .journey {
-    padding-bottom: 7%; }
+    padding: 7% 0 10% 0; }
     .journey-img {
       width: 40%; } }
+
+@media (max-width: 530px) {
+  .journey-content__title {
+    text-align: center; } }
 
 .gallery-container {
   display: -webkit-box;

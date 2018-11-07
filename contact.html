@@ -23,7 +23,7 @@
                         <a href="index.html">About</a>
                     </li>
                     <li class="header__links">
-                        <a class="header__links--title" href="index.html">Harper</a>
+                        <a class="header__links title" href="index.html">Harper</a>
                     </li>
                     <li class="header__links">
                         <a href="blog.html">Blog</a>
@@ -73,7 +73,8 @@
                 <form action="sendEmail.php" class="main-contact__form" method="POST" name="contactForm">
                     <input type="text" class="main-contact__name" name="name" required="true" placeholder="Name">
                     <input type="text" class="main-contact__email" name="email" placeholder="Email Address">
-                    <input type="text" class="main-contact__comment" name="comment" required="true" placeholder="Message">
+                    <!-- <input type="text" class="main-contact__comment" name="comment" required="true" placeholder="Message" cols="30" rows="10"> -->
+                    <textarea name="comment" class="main-contact__comment"  placeholder="Message"></textarea>
                     <input type="submit" class="main-contact__button" name="submit" value="Submit">
                 </form>
             </div>

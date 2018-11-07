@@ -161,6 +161,7 @@ a {
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 2rem;
   line-height: 29px; }
 
 h1 {
@@ -168,19 +169,22 @@ h1 {
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 20rem;
   line-height: 92px; }
 
 h4 {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   text-transform: uppercase;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-size: 2.4rem; }
 
 .main-blog__button {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 1.6rem;
   padding: 10px 15px;
   background: #f38d8d;
   border: 1px solid #f38d8d; }
@@ -188,17 +192,33 @@ h4 {
 a:hover {
   color: white; }
 
+#myBtn {
+  font-family: 'Oswald', sans-serif;
+  color: #171717;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  background: #f38d8d;
+  border: 1px solid #f38d8d; }
+
 @media (max-width: 768px) {
   .wrapper {
-    width: 95%; } }
+    width: 95%; }
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #171717;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 5rem; } }
 
 header {
   background: #b9dde7;
   position: relative; }
   header h1 {
     position: absolute;
-    bottom: -60px;
-    left: 150px; }
+    bottom: -80px;
+    left: 150px;
+    font-size: 8rem; }
 
 .header {
   display: -webkit-box;
@@ -215,8 +235,8 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
-  padding: 1% 20%; }
-  .header__links--title {
+  padding: 2% 20%; }
+  .header__links .title {
     font-size: 3rem; }
 
 .blog-background {
@@ -224,6 +244,15 @@ header {
   .blog-background__img {
     width: 100%;
     display: block; }
+
+@media (max-width: 767px) {
+  header h1 {
+    left: 8%; }
+  .header {
+    margin: 0;
+    padding: 0; }
+  .header__links {
+    margin: 0 2%; } }
 
 main {
   background: #f6f6f6;
@@ -301,6 +330,12 @@ main {
 .blue {
   border-bottom: 4px solid #227284; }
 
+#more {
+  display: block; }
+
+#myBtn {
+  display: none; }
+
 @media (max-width: 768px) {
   .aside {
     width: 40%;
@@ -321,14 +356,17 @@ main {
       margin: 1% 0;
       padding: 2%; } }
 
-#more {
-  display: none; }
-
 @media (max-width: 645px) {
   .main-blog__section--img {
     display: none; }
   .aside, .main-blog {
     width: 50%; } }
+
+#more {
+  display: none; }
+
+#myBtn {
+  display: block; }
 
 .footer-section {
   background: #171717; }

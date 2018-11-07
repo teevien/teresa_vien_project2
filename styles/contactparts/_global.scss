@@ -37,6 +37,7 @@ a {
     color: $primaryColor;
     text-transform: uppercase;
     letter-spacing:1px;
+    font-size: $size;
 }
 
 .header__links a {
@@ -57,4 +58,17 @@ a:hover {
 h1 {
     @include primaryFont (8rem);
     line-height:92px;
+}
+
+//MEDIA QUERIES
+@media (max-width:800px) {
+   h1 {
+       @include primaryFont (5rem);
+   }
+}
+
+@media (max-width:768px) {
+    .wrapper {
+        width:95%;
+    }
 }

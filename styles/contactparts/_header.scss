@@ -4,7 +4,7 @@ header {
 
     h1 {
         position:absolute;
-        bottom:-60px;
+        bottom:-80px;
         left:150px;
     }
 }
@@ -16,12 +16,11 @@ header {
     justify-content: center;
     justify-content: space-between;
     margin:0;
-    padding:1% 20%;
+    padding:2% 20%;
     
 
-    &__links--title {
+    &__links .title{
         font-size: 3rem;
-
     }
 }
 
@@ -31,5 +30,21 @@ header {
     &__img {
         width:100%;
         display:block;
+    }
+}
+
+// MEDIA QUERIES
+@media (max-width:767px) {
+    header h1 {
+        left:8%;
+    }
+
+     .header {
+        margin:0;
+        padding:0;
+    }
+
+    .header__links {
+        margin:0 2%;
     }
 }

@@ -157,6 +157,7 @@ a {
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 2rem;
   line-height: 29px; }
 
 a:hover {
@@ -167,6 +168,7 @@ a:hover {
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 2rem;
   line-height: 29px; }
 
 h1 {
@@ -174,14 +176,27 @@ h1 {
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 8rem;
   line-height: 92px; }
+
+@media (max-width: 800px) {
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #171717;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 5rem; } }
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 95%; } }
 
 header {
   background: #b9dde7;
   position: relative; }
   header h1 {
     position: absolute;
-    bottom: -60px;
+    bottom: -80px;
     left: 150px; }
 
 .header {
@@ -199,8 +214,8 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0;
-  padding: 1% 20%; }
-  .header__links--title {
+  padding: 2% 20%; }
+  .header__links .title {
     font-size: 3rem; }
 
 .blog-background {
@@ -208,6 +223,15 @@ header {
   .blog-background__img {
     width: 100%;
     display: block; }
+
+@media (max-width: 767px) {
+  header h1 {
+    left: 8%; }
+  .header {
+    margin: 0;
+    padding: 0; }
+  .header__links {
+    margin: 0 2%; } }
 
 main {
   background: #f6f6f6; }
@@ -291,3 +315,27 @@ main {
     text-align: center;
     margin: 0;
     padding: 0.5% 0; }
+
+@media (max-width: 800px) {
+  .main {
+    padding: 8% 0;
+    width: 80%; }
+  .contact {
+    padding: 5% 4%;
+    width: 50%; }
+  main p {
+    line-height: 25px; } }
+
+@media (max-width: 550px) {
+  .contact__links {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 5%; }
+  main p {
+    line-height: 10px;
+    text-align: center; }
+  .main {
+    display: block; }
+  .contact, .main-contact {
+    width: 100%; } }

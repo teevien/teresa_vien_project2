@@ -41,6 +41,7 @@ a {
     color: $primaryColor;
     text-transform: uppercase;
     letter-spacing:1px;
+    font-size: $size;
 }
 
 .header__links a {
@@ -68,9 +69,20 @@ a:hover {
     color: white;
 }
 
+#myBtn {
+    @include primaryFont (1.2rem);
+     background: $primaryAccent;
+     border:1px solid $primaryAccent;
+}
+
+
 //MEDIA QUERIES
 @media (max-width:768px) {
     .wrapper {
         width:95%;
     }
+    
+    h1 {
+       @include primaryFont (5rem);
+   }
 }

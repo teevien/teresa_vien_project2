@@ -43,15 +43,21 @@ main .button {
 
 
 // Typography Styles
-@mixin primaryFont ($size) {
+@mixin primaryFont($size) {
     font-family: 'Oswald', sans-serif;
     color: $primaryColor;
     text-transform: uppercase;
     letter-spacing:1px;
+    font-size: $size;
 }
 
-h1 {
-    @include primaryFont (8rem);
+h1, h2, h3, h4 {
+    margin:0;
+    padding:0;
+}
+
+header h1 {
+    @include primaryFont (10rem);
     line-height:92px;
 }
 
@@ -85,4 +91,11 @@ a:hover {
 
 a:active {
     color:white;
+}
+
+//MEDIA QUERIES
+@media (max-width:768px) {
+    .wrapper {
+        width:95%;
+    }
 }

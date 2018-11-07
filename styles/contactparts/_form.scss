@@ -98,3 +98,40 @@ main {
     }
 
 }
+
+//MEDIA QUERIES
+@media (max-width:800px) {
+    .main {
+        padding:8% 0;
+        width:80%;
+        
+    }
+
+    .contact  {
+        padding:5% 4%;
+        width:50%;
+    }
+
+    main p {
+        line-height:25px;
+    }
+}
+
+@media (max-width:550px) {
+
+    .contact__links {
+        justify-content: center;
+        margin-left:5%;
+    }
+    main p {
+        line-height:10px;
+        text-align:center;
+    }
+    .main {
+        display:block;
+    }
+
+    .contact, .main-contact {
+        width:100%;
+    }
+}
