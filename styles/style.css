@@ -291,6 +291,10 @@ header {
     bottom: 0;
     left: 0; } }
 
+@media (max-width: 630px) {
+  .logo-section__title {
+    margin-right: 20%; } }
+
 .harper1 {
   background: #f6f6f6; }
 
@@ -332,7 +336,8 @@ header {
 @media (max-width: 768px) {
   .nav-container {
     height: 140px;
-    width: 100%; }
+    width: 100%;
+    margin-top: 5%; }
   .navigation {
     width: 15%;
     position: relative;
@@ -353,7 +358,7 @@ header {
     padding-top: 2%;
     margin-top: 7%; }
   .navigation__icon {
-    left: 15px; } }
+    left: 20px; } }
 
 @media (max-width: 480px) {
   .navigation__text--title {
@@ -412,8 +417,10 @@ header {
     text-align: right; } }
 
 @media (max-width: 767px) {
+  .one {
+    margin: 8% 0 8% 10%; }
   .two {
-    margin-left: 8%; } }
+    margin: 8% 0 8% 12%; } }
 
 @media (max-width: 630px) {
   .container-text {
@@ -449,7 +456,7 @@ header {
 
 @media (max-width: 630px) {
   .journey {
-    padding: 7% 0 10% 0; }
+    padding: 10% 0 10% 0; }
     .journey-img {
       width: 40%; } }
 

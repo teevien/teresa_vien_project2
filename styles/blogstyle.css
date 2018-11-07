@@ -169,7 +169,7 @@ h1 {
   color: #171717;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 20rem;
+  font-size: 8rem;
   line-height: 92px; }
 
 h4 {
@@ -217,8 +217,7 @@ header {
   header h1 {
     position: absolute;
     bottom: -80px;
-    left: 150px;
-    font-size: 8rem; }
+    left: 150px; }
 
 .header {
   display: -webkit-box;
